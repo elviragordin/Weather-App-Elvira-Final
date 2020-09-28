@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather app Elvira</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weatherapp">
+            <form class="search-form" id="search-form">
+                <div class="row">
+                    <div class="col-5">
+                        <input type="search" placeholder="Type a city.." autofocus="on" autocomplete="off"
+                            id="city-input" class="form-control shadow-sm" />
+                    </div>
+                    <div class="col-2.5">
+                        <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm" />
+                    </div>
+                    <div class="col-2.5">
+                        <button type="button" id="my-location" class="search-button">Current Location</button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row">
+                <div class="col-6">
+                    <ul>
+                        <li>
+                            <h1 id="city">Brussels</h1>
+                        </li>
+                        <li id="date"></li>
+                        <li>
+                            Mostly cloudy
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6">
+                    <ul>
+                        <li>
+                            <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                                alt="Partly cloudy" />
+                        </li>
+                        <li>
+                            <span class="temperature" id="currentTemperature"></span><span class="units">
+                                <a href="#" id="celsius-link">°C </a>|<a href="#" id="fahrenheit-link">°F </a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="container weather-details">
+                    <div class="row">
+                        <div class="col-sm">
+                            <strong>Percipitation</strong>
+                        </div>
+                        <div class="col-sm">
+                            <strong>Humidity</strong>
+                        </div>
+                        <div class="col-sm">
+                            <strong>Wind</strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm" id="percipitation">
+                            <strong></strong>
+                        </div>
+                        <div class="col-sm" id="humidity">
+                            <strong></strong>
+                        </div>
+                        <div class="col-sm" id="windspeed">
+                            <strong></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <div class="row row-cols-5">
+                        <div class="col">
+                            <h3><strong>Sunday</strong></h3>
+                            <h4>15°C / 21ºC</h4>
+                            <span class="weather-emoji">🌧</span>
+                        </div>
+
+                        <div class="col">
+                            <h3><strong> Monday </strong></h3>
+                            <h4>15°C / 21ºC</h4>
+                            <span class="weather-emoji">☁️</span>
+                        </div>
+
+                        <div class="col">
+                            <h3><strong>Tuesday</strong> </h3>
+                            <h4>15°C / 21ºC</h4>
+                            <span class="weather-emoji">☁️</span>
+                        </div>
+
+                        <div class="col">
+                            <h3><strong> Wednesday </strong></h3>
+                            <h4>15°C / 21ºC</h4>
+                            <span class="weather-emoji">🌬</span>
+                        </div>
+
+                        <div class="col">
+                            <h3><strong> Thursday </strong></h3>
+                            <h4>15°C / 21ºC</h4>
+                            <span class="weather-emoji">☁️</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <script src="src/index.js"></script>
+
+</body>
+
+</html>
