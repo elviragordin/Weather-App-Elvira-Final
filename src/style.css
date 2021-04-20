@@ -1,11 +1,11 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Kiwi Maru", serif;
   background-color: white;
   text-align: center;
   color: rgb(22, 22, 22);
 }
 h1 {
-  color: white;
+  color: black;
   margin: 0 0 10px;
 }
 h2 {
@@ -14,15 +14,15 @@ h2 {
 
 h3 {
   font-size: 20px;
-  color: white;
+  color: black;
 }
 h4 {
   font-size: 15px;
-  color: white;
+  color: black;
 }
 
 ul {
-  color: white;
+  color: black;
   margin: 0 auto;
   padding: 0;
 }
@@ -36,18 +36,18 @@ li {
   margin: 20px;
   max-width: 600px;
   background-color: #fff;
-  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  background-color: #faf0dc;
 }
 
 .temperature {
   font-weight: 500;
   font-size: 50px;
-  color: purple;
+  color: black;
 }
 
 .forecast {
   font-size: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Kiwi Maru", serif;
   text-align: center;
   color: rgb(22, 22, 22);
 }
@@ -66,7 +66,7 @@ li {
   color: white;
   text-align: center;
   vertical-align: middle;
-  background-color: #86bfd5;
+  background-color: #d5b895;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
